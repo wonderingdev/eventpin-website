@@ -3,9 +3,33 @@ header {
   justify-content: center;
   .title {
     color: #ffeb3b;
-    font-size: 80px;
+    font-size: 4vw;
     font-family: "AveriaGruesaLibre";
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  @media (width < 480px) {
+    .title {
+      font-size: 10vw;
+    }
+  }
+
+  @media (min-width: 480px) and (max-width: 768px) {
+    .title {
+      font-size: 10vw;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .title {
+      font-size: 6vw;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    .title {
+      font-size: 4vw;
+    }
   }
 }
 

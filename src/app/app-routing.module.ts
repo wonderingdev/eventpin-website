@@ -1,8 +1,7 @@
-import { AppComponent } from './app/app.component';
-import { PrivacyPolicyComponent } from './app/privacy-policy/privacy-policy.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router'; // CLI imports router
-import { HomeComponent } from './app/home/home.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -12,7 +11,7 @@ const routes: Routes = [
 
 // configures NgModule imports and exports
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {useHash: true})],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

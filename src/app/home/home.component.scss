@@ -1,0 +1,86 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  .title {
+    color: #ffeb3b;
+    font-size: 80px;
+    font-family: "AveriaGruesaLibre";
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+}
+
+.feature-image {
+  max-width: 60%;
+  border-radius: 50px;
+  flex: 1;
+  filter: drop-shadow(0mm 2mm 2mm rgb(50, 168, 82));
+}
+
+.play-store-link {
+  display: flex;
+
+  a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 40%;
+    }
+  }
+}
+
+.screenshot-list-container {
+  overflow-y: auto;
+  margin-bottom: 50px;
+
+  .screenshot-list {
+    width: 100%;
+    white-space: nowrap;
+    display: inline-block;
+    margin: 0 auto;
+
+    .screenshot {
+      display: inline-block;
+      margin: 0px 10px;
+      max-width: 100%;
+
+      img {
+        filter: drop-shadow(1mm 0mm 1mm rgb(50, 168, 82));
+      }
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    img {
+      max-height: 400px;
+      max-width: 100%;
+    }
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/assets/grass.png);
+  height: 30px;
+
+  span {
+    cursor: pointer;
+    color: wheat;
+    font-family: "AveriaGruesaLibre";
+  }
+}

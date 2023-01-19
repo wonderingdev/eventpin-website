@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'AveriaGruesaLibre';
+  font-style: normal;
+  font-weight: normal;
+  src: local('AveriaGruesaLibre'), url('./assets/fonts/AveriaGruesaLibre-Regular.ttf');
+}
+
+/* @font-face {
+  font-family: AveriaGruesaLibre;
+  src: url("assets/fonts/AveriaGruesaLibre-Regular.ttf") format("truetype");
+} */

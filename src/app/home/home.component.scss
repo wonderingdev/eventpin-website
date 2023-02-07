@@ -5,6 +5,12 @@
   align-items: center;
 }
 
+.store-button {
+ 
+    max-width: 100%;
+    height: auto;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -57,7 +63,8 @@ header {
     justify-content: center;
 
     img {
-      width: 40%;
+      width: 50%;
+      height: 150px;
     }
   }
 }

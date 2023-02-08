@@ -3,19 +3,29 @@
 </header>
 
 <img class="feature-image" src="assets/feature-graphic.png" />
-<div style="display: flex; flex-wrap: wrap; justify-content: center; margin-top: 15px; margin-bottom: 5px;">
+<div
+  style="
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  "
+>
   <a
-  target="_blank"
-  href="https://apps.apple.com/us/app/little-bee/id1669580633?itsct=apps_box_badge&amp;itscg=30200"
-  style="width:300px; display:flex; justify-content: center;"
-  ><img
-  class="store-button"
-    src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1675728000"
-    alt="Download on the App Store"
-    style="width:81%;"
-/></a>
+    (click)="onAppleAppStoreClick()"
+    target="_blank"
+    href="https://apps.apple.com/us/app/little-bee/id1669580633?itsct=apps_box_badge&amp;itscg=30200"
+    style="width: 300px; display: flex; justify-content: center"
+    ><img
+      class="store-button"
+      src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1675728000"
+      alt="Download on the App Store"
+      style="width: 81%"
+  /></a>
   <a
-  style="width:300px"
+    (click)="onGooglePlayClick()"
+    style="width: 300px"
     target="_blank"
     href="https://play.google.com/store/apps/details?id=com.little_bee&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
     ><img
@@ -23,7 +33,6 @@
       alt="Get it on Google Play"
       src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
   /></a>
-
 </div>
 
 <iframe

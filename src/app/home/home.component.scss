@@ -21,36 +21,51 @@ header {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
 
-  @media (width < 480px) {
+  @media (width < 150px) {
     .title {
-      font-size: 10vw;
+      font-size: 30vw;
+    }
+  }
+
+
+  @media (min-width: 150px) and (max-width: 480px) {
+    .title {
+      font-size: 20vw;
     }
   }
 
   @media (min-width: 480px) and (max-width: 768px) {
     .title {
-      font-size: 10vw;
+      font-size: 20vw;
     }
   }
 
   @media (min-width: 769px) and (max-width: 1024px) {
     .title {
-      font-size: 6vw;
+      font-size: 15vw;
     }
   }
 
   @media (min-width: 1025px) and (max-width: 1200px) {
     .title {
-      font-size: 4vw;
+      font-size: 10vw;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .title {
+      font-size: 6vw;
     }
   }
 }
 
 .feature-image {
-  max-width: 100%;
-  max-height: 350px;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
   border-radius: 5vw;
-  flex: 1;
   filter: drop-shadow(0mm 1mm 1mm rgb(50, 168, 82));
 }
 

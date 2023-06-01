@@ -1,7 +1,9 @@
+@import "../../styles.scss";
 
-
-.spacer {
-  flex: 1 1 auto;
+:host {
+  background-color: $bg-default-color;
+  height: 100%;
+  display: block;
 }
 
 .store-button {
@@ -33,4 +35,3 @@
     }
   }
 }
-

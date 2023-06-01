@@ -1,6 +1,20 @@
+:host {
+  height: 100vh;
+  background-color: rgba(151, 245, 151, 0.2);
+  // background-size: 15px 15px;
+  // background-image: linear-gradient(
+  //   to right,
+  //   rgba(90, 188, 241, 0.52) 1px,
+  //   transparent 1px
+  // );
+}
 
 .spacer {
   flex: 1 1 auto;
+}
+
+.mat-sidenav {
+  width: 200px;
 }
 
 .page-container {
@@ -16,10 +30,11 @@
   top: 0; /* Sets the sticky toolbar to be on top */
   z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
 
-  a, .logo  {
-      height: 90%;
-      margin-right: 10px;
-    }
+  a,
+  .logo {
+    height: 90%;
+    margin-right: 10px;
+  }
 
   .title {
     cursor: pointer;

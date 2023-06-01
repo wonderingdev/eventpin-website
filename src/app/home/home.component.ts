@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-declare let gtag:Function;
+declare let gtag: Function;
 
 @Component({
   selector: 'home',

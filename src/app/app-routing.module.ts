@@ -6,14 +6,14 @@ import { TermsOfServiceComponent } from './terms-of-service/terms-of-service.com
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: '',   redirectTo: '/home', pathMatch: 'full' },
-  { path: 'privacy-policy', component: PrivacyPolicyComponent }, 
-  { path: 'terms-of-service', component: TermsOfServiceComponent }, 
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'privacy-policy', component: PrivacyPolicyComponent },
+  { path: 'terms-of-service', component: TermsOfServiceComponent },
 ]; // sets up routes constant where you define your routes
 
 // configures NgModule imports and exports
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

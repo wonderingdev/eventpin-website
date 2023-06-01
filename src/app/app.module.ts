@@ -6,8 +6,11 @@ import { AppComponent } from './app.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { TermsOfServiceComponent } from './terms-of-service/terms-of-service.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatButtonModule} from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -15,16 +18,18 @@ import {MatButtonModule} from '@angular/material/button';
     PrivacyPolicyComponent,
     AppComponent,
     TermsOfServiceComponent,
-  
   ],
   imports: [
+    MatIconModule,
+    FlexLayoutModule,
+    MatSidenavModule,
     MatButtonModule,
     MatToolbarModule,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

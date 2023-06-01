@@ -14,7 +14,8 @@ import {MatButtonModule} from '@angular/material/button';
     HomeComponent,
     PrivacyPolicyComponent,
     AppComponent,
-    TermsOfServiceComponent
+    TermsOfServiceComponent,
+  
   ],
   imports: [
     MatButtonModule,

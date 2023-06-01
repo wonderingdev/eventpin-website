@@ -2,6 +2,7 @@
   display: inline-block;
   padding-left: 10%;
   margin-right: 10%;
-  height: 100%;
-  overflow: auto;
+
+  //   for some reason the content gets clipped at the bottom in android browsers, so added a padding
+  padding-bottom: 60px;
 }

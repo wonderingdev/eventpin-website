@@ -17,28 +17,30 @@
     </mat-sidenav>
 
     <mat-sidenav-content fxFlexFill>
-      <mat-toolbar class="main-app-toolbar" color="primary">
-        <a routerLink="/home"
-          ><img class="logo" src="assets/eventpin-logo.png"
-        /></a>
+      <div class="sidenav-content-wrapper" fxFlexFill fxShow fxFlex>
+        <mat-toolbar class="main-app-toolbar" color="primary">
+          <a routerLink="/home"
+            ><img class="logo" src="assets/eventpin-logo.png"
+          /></a>
 
-        <span class="title" routerLink="/home">EventPin</span>
+          <span class="title" routerLink="/home">EventPin</span>
 
-        <span class="spacer"></span>
+          <span class="spacer"></span>
 
-        <div fxShow="true" fxHide.lt-md="true">
-          <ng-container *ngTemplateOutlet="menuItems"></ng-container>
-        </div>
+          <div fxShow="true" fxHide.lt-md="true">
+            <ng-container *ngTemplateOutlet="menuItems"></ng-container>
+          </div>
 
-        <div fxShow="true" fxHide.gt-sm="true">
-          <button mat-icon-button (click)="sidenav.toggle()">
-            <mat-icon>menu</mat-icon>
-          </button>
-        </div>
-      </mat-toolbar>
-      <section class="content">
-        <router-outlet></router-outlet>
-      </section>
+          <div fxShow="true" fxHide.gt-sm="true">
+            <button mat-icon-button (click)="sidenav.toggle()">
+              <mat-icon>menu</mat-icon>
+            </button>
+          </div>
+        </mat-toolbar>
+        <section class="content">
+          <router-outlet></router-outlet>
+        </section>
+      </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>

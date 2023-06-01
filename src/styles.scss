@@ -2,12 +2,14 @@
 $bg-default-color: rgba(200, 224, 247, 0.57);
 
 body {
+  overflow: hidden;
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 html {
   height: 100%;
+  overflow: hidden;
 }
 
 body {

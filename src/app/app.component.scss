@@ -24,26 +24,32 @@
   flex-direction: column;
 }
 
-.app-toolbar {
-  position: sticky;
+.main-app-toolbar {
+  position: fixed;
   position: -webkit-sticky; /* For macOS/iOS Safari */
   top: 0; /* Sets the sticky toolbar to be on top */
-  z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+  z-index: 999; /* Ensure that your app's content doesn't overlap the toolbar */
+
+  .title {
+    cursor: pointer;
+  }
 
   a,
   .logo {
     height: 90%;
     margin-right: 10px;
   }
+}
 
-  .title {
-    cursor: pointer;
+.menu-app-toolbar {
+  display: flex;
+  justify-content: center;
+  a,
+  .logo {
+    height: 90%;
   }
 }
 
-section {
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 10px;
+.content {
+  margin-top: 70px;
 }

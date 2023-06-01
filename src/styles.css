@@ -4,6 +4,7 @@ body {
   background-color: rgba(151, 245, 151, 0.2);
   background-size: 15px 15px;
   background-image:
-    linear-gradient(to right, rgb(166, 230, 110, 0.3) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(123, 199, 30, 0.3) 1px, transparent 1px);
+    linear-gradient(to right, rgba(90, 188, 241, 0.52) 1px, transparent 1px),
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

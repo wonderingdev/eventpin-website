@@ -1,1 +1,26 @@
-<router-outlet></router-outlet>
+<div class="page-container">
+    <mat-toolbar class="app-toolbar" color="primary">
+        <span>Event Pin</span>
+        <span class="spacer"></span>
+        <button
+          routerLink="/privacy-policy"
+          mat-button
+          class="example-icon favorite-icon"
+          aria-label="Example icon-button with heart icon"
+        >
+          Privacy Policy
+        </button>
+        <button
+          routerLink="/terms-of-service"
+          mat-button
+          class="example-icon favorite-icon"
+          aria-label="Example icon-button with heart icon"
+        >
+          Terms of Service
+        </button>
+      </mat-toolbar>
+      
+      <section>
+          <router-outlet></router-outlet>
+      </section>      
+</div>

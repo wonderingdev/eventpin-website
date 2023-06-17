@@ -2,9 +2,10 @@
 
 $blur-value: 3px;
 
-.animation-container {
+.content {
   position: relative;
-  height: 50vh;
+  height: 60vh;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;

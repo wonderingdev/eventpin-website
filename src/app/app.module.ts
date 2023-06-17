@@ -14,6 +14,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { BodySectionComponent } from './home/body-section/body-section.component';
+import { DownloadItSectionComponent } from './home/download-it-section/download-it-section.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { BodySectionComponent } from './home/body-section/body-section.component
     AppComponent,
     TermsOfServiceComponent,
     BodySectionComponent,
+    DownloadItSectionComponent,
   ],
   imports: [
     MatIconModule,

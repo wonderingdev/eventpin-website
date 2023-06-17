@@ -1,0 +1,65 @@
+@import "../../../styles.scss";
+
+$blur-value: 3px;
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 80px;
+  animation: fadein 2s;
+
+  .phone {
+    max-width: 300px;
+    max-height: 400px;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5px;
+    max-width: 400px;
+    align-items: center;
+    margin-right: 10px;
+
+    .title {
+      font-family: $event-pin-font;
+      font-size: 40px;
+      text-align: center;
+    }
+
+    .store-button {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .play-store-link {
+      display: flex;
+
+      a {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 50%;
+          height: 150px;
+        }
+      }
+    }
+  }
+}

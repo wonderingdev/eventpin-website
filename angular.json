@@ -29,8 +29,7 @@
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.scss",
-              "src/averia-gruesa-libre-font.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },

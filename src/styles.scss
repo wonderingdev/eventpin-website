@@ -1,5 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: Brush Script MT;
+  src: url(assets/fonts/BRUSHSCI.ttf) format("opentype");
+}
+
 $bg-default-color: rgb(255, 255, 255);
+$event-pin-font: "Brush Script MT";
 
 body {
   overflow: hidden;
@@ -8,7 +15,7 @@ body {
 }
 
 .app-title {
-  font-family: "Brush Script MT";
+  font-family: $event-pin-font;
 }
 
 html {

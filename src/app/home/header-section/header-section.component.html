@@ -1,0 +1,26 @@
+<div class="animation-container">
+  <div #background class="map-background">
+    <!-- Emoji icons -->
+    <div
+      class="emoji-icon"
+      *ngFor="let emojiState of emojiStates; let i = index"
+      [@emojiAnimation]="emojiState.state"
+      [style.top.px]="emojiState.top"
+      [style.left.px]="emojiState.left"
+    >
+      {{ emojis[i] }}
+    </div>
+  </div>
+  <div class="foreground">
+    <div class="foreground-content">
+      <img class="logo" src="assets/eventpin-logo.png" alt="EventPin Logo" />
+      <h1 class="header">EventPin</h1>
+
+      <p class="description">
+        Create, discover and join exciting events near you. Whether you're a
+        social butterfly or just looking for something fun to do on a Friday
+        evening, EventPin has got you covered.
+      </p>
+    </div>
+  </div>
+</div>

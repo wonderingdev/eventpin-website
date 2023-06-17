@@ -1,4 +1,5 @@
 import { HomeComponent } from './home/home.component';
+import { HeaderSectionComponent } from './home/header-section/header-section.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from 'src/app/app-routing.module';
@@ -11,13 +12,17 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { BodySectionComponent } from './home/body-section/body-section.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
+    HeaderSectionComponent,
     PrivacyPolicyComponent,
     AppComponent,
     TermsOfServiceComponent,
+    BodySectionComponent,
   ],
   imports: [
     MatIconModule,
@@ -28,6 +33,7 @@ import { MatIconModule } from '@angular/material/icon';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

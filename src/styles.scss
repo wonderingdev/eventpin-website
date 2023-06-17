@@ -1,10 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
-$bg-default-color: rgba(200, 224, 247, 0.57);
+$bg-default-color: rgb(255, 255, 255);
 
 body {
   overflow: hidden;
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Open Sans";
+}
+
+.app-title {
+  font-family: "Brush Script MT";
 }
 
 html {

@@ -1,9 +1,12 @@
 @import "../../styles.scss";
 
 :host {
-  background-color: $bg-default-color;
   height: 100%;
   display: block;
+}
+
+header {
+  height: 360px;
 }
 
 .store-button {

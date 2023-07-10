@@ -15,6 +15,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { BodySectionComponent } from './home/body-section/body-section.component';
 import { DownloadItSectionComponent } from './home/download-it-section/download-it-section.component';
+import { SupportComponent } from './support/support.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { DownloadItSectionComponent } from './home/download-it-section/download-
     TermsOfServiceComponent,
     BodySectionComponent,
     DownloadItSectionComponent,
+    SupportComponent,
   ],
   imports: [
     MatIconModule,

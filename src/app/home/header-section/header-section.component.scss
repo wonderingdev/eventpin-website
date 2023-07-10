@@ -1,6 +1,14 @@
 @import "../../../styles.scss";
 
 $blur-value: 3px;
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .content {
   position: relative;
@@ -18,6 +26,7 @@ $blur-value: 3px;
   width: 100%;
   background-position: center;
   z-index: -10;
+  animation: fadein 2s;
 }
 
 .map-background::before {
@@ -32,6 +41,7 @@ $blur-value: 3px;
   -webkit-filter: blur($blur-value);
   opacity: 0.4;
   background-image: url("/assets/map-background.png");
+  transition: background-image 0.2s ease-in-out;
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -53,6 +63,7 @@ $blur-value: 3px;
   align-items: center;
   justify-content: center;
   flex: 1;
+  animation: fadein 3s;
 
   .foreground-content {
     flex: 1;

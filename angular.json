@@ -25,6 +25,16 @@
                 "input": "src/docs",
                 "glob": "app-ads.txt",
                 "output": "."
+              },
+              {
+                "input": "src/docs",
+                "glob": "apple-app-site-association",
+                "output": "./.well-known"
+              },
+              {
+                "input": "src/docs",
+                "glob": "assetlinks.json",
+                "output": "./.well-known"
               }
             ],
             "styles": [

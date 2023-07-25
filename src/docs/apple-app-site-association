@@ -1,0 +1,14 @@
+{
+  "applinks": {
+      "apps": [],
+      "details": [
+      {
+        "appID": "TD2DZ9QSC3.net.eventpin",
+        "paths": [
+            "/event/*",
+            "/user/*/profile"
+        ]
+      }
+    ]
+  }
+}

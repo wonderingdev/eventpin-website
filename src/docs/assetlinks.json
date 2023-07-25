@@ -1,0 +1,11 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "net.eventpin",
+      "sha256_cert_fingerprints":
+      ["A6:F3:9F:0E:3F:BA:4F:34:5A:53:58:7F:2A:48:50:3F:0E:05:A7:D4:D3:62:57:5C:98:F7:AB:DE:6C:60:86:E6",
+    "9E:C0:A2:03:D6:C4:94:DA:F1:2A:14:EA:7D:B1:98:02:52:B6:0C:3A:1C:17:80:95:3E:E0:49:D1:60:87:5E:56"]
+    }
+  }]
+  

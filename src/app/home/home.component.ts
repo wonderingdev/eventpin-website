@@ -1,12 +1,41 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 declare let gtag: Function;
+import {
+  getSupportedInputTypes,
+  Platform,
+  supportsPassiveEventListeners,
+  supportsScrollBehavior,
+} from '@angular/cdk/platform';
 
 @Component({
   selector: 'home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
+  constructor(private router: Router, public platform: Platform) {}
+
+  ngOnInit(): void {
+    if (this.platform.ANDROID || this.platform.IOS) {
+      const url = this.router.url;
+      let matches = url.match('.*/event/.*');
+      let anyMatch = matches && matches!.length > 0;
+      matches = url.match('.*/user/.*/profile$');
+      anyMatch ||= matches && matches!.length > 0;
+
+      if (anyMatch) {
+        if (this.platform.ANDROID) {
+          window.location.href =
+            'https://play.google.com/store/apps/details?id=net.eventpin';
+        } else {
+          window.location.href =
+            'https://apps.apple.com/de/app/eventpin/id6449166469?l=en-GB';
+        }
+      }
+    }
+  }
+
   onGooglePlayClick() {
     gtag('event', 'google_play_click', {
       event_category: 'button_click',

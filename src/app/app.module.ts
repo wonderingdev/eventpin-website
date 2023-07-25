@@ -16,6 +16,7 @@ import { MatCardModule } from '@angular/material/card';
 import { BodySectionComponent } from './home/body-section/body-section.component';
 import { DownloadItSectionComponent } from './home/download-it-section/download-it-section.component';
 import { SupportComponent } from './support/support.component';
+import { PlatformModule } from '@angular/cdk/platform';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { SupportComponent } from './support/support.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
+    PlatformModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

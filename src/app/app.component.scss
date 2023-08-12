@@ -22,6 +22,10 @@
 }
 
 .main-app-toolbar {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+
   .title {
     @extend .app-title;
     cursor: pointer;
@@ -53,4 +57,5 @@
 .content {
   flex: 1;
   overflow-y: auto;
+  padding-top: 60px;
 }

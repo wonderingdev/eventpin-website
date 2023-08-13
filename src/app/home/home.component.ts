@@ -1,4 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 import { Router } from '@angular/router';
 declare let gtag: Function;
 import {
@@ -13,12 +19,26 @@ import {
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit {
+  @ViewChild('downloadSection', { read: ElementRef })
+  downloadSection: ElementRef;
+
   constructor(private router: Router, public platform: Platform) {}
 
+  ngAfterViewInit(): void {
+    const url = this.router.url;
+
+    if (url.endsWith('#download')) {
+      this.downloadSection.nativeElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  }
+
   ngOnInit(): void {
+    const url = this.router.url;
     if (this.platform.ANDROID || this.platform.IOS) {
-      const url = this.router.url;
       let matches = url.match('.*/event/.*');
       let anyMatch = matches && matches!.length > 0;
       matches = url.match('.*/user/.*/profile$');

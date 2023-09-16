@@ -11,42 +11,6 @@ $blur-value: 3px;
   }
 }
 
-.content {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  .card {
-    padding: 20px;
-    display: flex;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    width: 250px;
-    height: 200px;
-    align-items: center;
-    border-radius: 20px;
-
-    animation: fadein 2s;
-
-    .title {
-      margin-bottom: 10px;
-      text-align: left;
-      width: 100%;
-
-      .icon {
-        margin-right: 10px;
-      }
-    }
-  }
+:host {
+  animation: fadein 2s;
 }

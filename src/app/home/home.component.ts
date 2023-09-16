@@ -29,10 +29,14 @@ export class HomeComponent implements OnInit, AfterViewInit {
     const url = this.router.url;
 
     if (url.endsWith('#download')) {
-      this.downloadSection.nativeElement.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
+      setTimeout(
+        () =>
+          this.downloadSection.nativeElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          }),
+        100
+      );
     }
   }
 

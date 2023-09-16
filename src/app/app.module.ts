@@ -17,6 +17,9 @@ import { BodySectionComponent } from './home/body-section/body-section.component
 import { DownloadItSectionComponent } from './home/download-it-section/download-it-section.component';
 import { SupportComponent } from './support/support.component';
 import { PlatformModule } from '@angular/cdk/platform';
+import { BenefitsComponent } from './home/body-section/benefits/benefits.component';
+import { InstructionsComponent } from './home/body-section/instructions/instructions.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,8 +31,11 @@ import { PlatformModule } from '@angular/cdk/platform';
     BodySectionComponent,
     DownloadItSectionComponent,
     SupportComponent,
+    BenefitsComponent,
+    InstructionsComponent,
   ],
   imports: [
+    HttpClientModule,
     MatIconModule,
     FlexLayoutModule,
     MatSidenavModule,

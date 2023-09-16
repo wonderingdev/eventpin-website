@@ -1,0 +1,34 @@
+@import "../../../../styles.scss";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $section-padding;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .item {
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px;
+    padding: 8px;
+
+    .icon {
+      margin-right: 10px;
+      color: $event-pin-icon-color;
+    }
+
+    p {
+      flex: 1;
+      margin: 0px;
+    }
+  }
+}

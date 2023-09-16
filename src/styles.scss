@@ -5,13 +5,23 @@
   src: url(assets/fonts/BRUSHSCI.ttf) format("opentype");
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 $bg-default-color: rgb(255, 255, 255);
 $event-pin-font: "Brush Script MT";
+$event-pin-icon-color: #0099ff;
+$section-padding: 15px;
 
 body {
   overflow: hidden;
   margin: 0;
-  font-family: "Open Sans";
 }
 
 .app-title {

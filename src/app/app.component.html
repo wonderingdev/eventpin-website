@@ -37,6 +37,8 @@
                 <mat-icon>menu</mat-icon>
               </button>
             </div>
+
+            <ng-container *ngTemplateOutlet="socialLinks"></ng-container>
           </mat-toolbar-row>
         </mat-toolbar>
         <section class="content">
@@ -46,6 +48,15 @@
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
+
+<ng-template #socialLinks>
+  <button mat-icon-button (click)="onSocialButtonClick('facebook')">
+    <mat-icon class="social-link">facebook</mat-icon>
+  </button>
+  <button mat-icon-button (click)="onSocialButtonClick('instagram')">
+    <mat-icon class="social-link" svgIcon="instagram"></mat-icon>
+  </button>
+</ng-template>
 
 <ng-template #menuItems>
   <button

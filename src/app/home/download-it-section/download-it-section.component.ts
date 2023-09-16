@@ -6,6 +6,7 @@ import {
   animate,
   transition,
 } from '@angular/animations';
+declare const fbq: any;
 
 @Component({
   selector: 'download-it-section',
@@ -25,4 +26,12 @@ import {
     ]),
   ],
 })
-export class DownloadItSectionComponent {}
+export class DownloadItSectionComponent {
+  onAppleStoreClick() {
+    (window as any).fbq('trackCustom', 'AppleStoreClick');
+  }
+
+  onGooglePlayStoreClick() {
+    (window as any).fbq('trackCustom', 'GooglePlayStoreClick');
+  }
+}

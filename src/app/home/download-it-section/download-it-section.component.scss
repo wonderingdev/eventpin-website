@@ -22,8 +22,12 @@ $blur-value: 3px;
   animation: fadein 2s;
 
   .phone {
+    height: 100%;
+    width: 100%;
+  }
+
+  .carousel {
     max-width: 300px;
-    max-height: 400px;
   }
 
   .description {

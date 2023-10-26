@@ -37,8 +37,14 @@
       /></a>
     </button>
   </div>
-  <img
-    class="phone"
-    src="https://event-pin-website.s3.eu-central-1.amazonaws.com/ios/event-map-ios.png"
-  />
+  <ngx-slick-carousel
+    style="flex: 1; max-width: 250px"
+    class="carousel"
+    #slickModal="slick-carousel"
+    [config]="slideConfig"
+  >
+    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+      <img class="phone" src="{{ slide.img }}" />
+    </div>
+  </ngx-slick-carousel>
 </div>

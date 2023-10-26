@@ -20,6 +20,7 @@ import { PlatformModule } from '@angular/cdk/platform';
 import { BenefitsComponent } from './home/body-section/benefits/benefits.component';
 import { InstructionsComponent } from './home/body-section/instructions/instructions.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MatCardModule,
     PlatformModule,
+    SlickCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

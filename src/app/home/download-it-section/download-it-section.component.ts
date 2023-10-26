@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import {
   trigger,
   state,
@@ -27,6 +27,31 @@ declare const fbq: any;
   ],
 })
 export class DownloadItSectionComponent {
+  slides: any[] = [];
+
+  slideConfig = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    adaptiveHeight: true,
+    lazyLoad: 'progressive',
+    autoplaySpeed: 2000,
+    mobileFirst: true,
+    arrows: true,
+  };
+
+  constructor() {
+    for (let i = 1; i <= 8; ++i) {
+      this.slides = [
+        ...this.slides,
+        {
+          img: `assets/screenshots/6.5in-Screen-${i}.png`,
+        },
+      ];
+    }
+    console.log(this.slides);
+  }
+
   onAppleStoreClick() {
     (window as any).fbq('trackCustom', 'AppleStoreClick');
   }

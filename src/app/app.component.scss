@@ -26,6 +26,32 @@
   position: fixed;
   top: 0;
 
+  .producthunt-banner {
+    text-decoration: none;
+    width: 100%;
+    padding: 3px;
+    background-color: rgb(249 250 251);
+    font-size: 14px;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .producthunt-button {
+      background-color: rgb(249 115 22);
+      color: white;
+      font-size: 12px;
+    }
+
+    .arrow {
+      width: 1.25rem;
+    }
+  }
+
+  .producthunt-banner:hover {
+    background-color: rgb(236, 238, 239);
+  }
+
   .title {
     @extend .app-title;
     cursor: pointer;
